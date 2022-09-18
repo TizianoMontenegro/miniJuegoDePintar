@@ -1,0 +1,2866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/js/code.js"></script>
+    <style>
+        .block{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box{
+            width: 20px;
+            height: 20px;
+            background-color: #3f9;
+            border: 3px solid rgb(4, 214, 109);
+            text-align: center;
+        }
+        h1{
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        .header span a{
+            font-size: 17px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>pinta si puedes <span><a href="#controls">(controles)</a></span></h1>
+    </header>
+
+
+    <div class="block">
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+    
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+        
+        <div class="box" tabindex="9">
+            $
+        </div>
+        
+        <div class="box" tabindex="10">
+            $
+        </div>
+        
+        <div class="box" tabindex="1">
+            $
+        </div>
+        
+        <div class="box" tabindex="2">
+            $
+        </div>
+    
+        <div class="box" tabindex="3">
+            $
+        </div>
+        
+        <div class="box" tabindex="4">
+            $
+        </div>
+    
+        <div class="box" tabindex="5">
+            $
+        </div>
+        
+        <div class="box" tabindex="6">
+            $
+        </div>
+    
+        <div class="box" tabindex="7">
+            $
+        </div>
+        
+        <div class="box" tabindex="8">
+            $
+        </div>
+    </div>
+
+    <div id="controls">
+        <h2>controles:</h2>
+        <h4>pasando el mouse por encima podemos pintar de amarillo</h4>
+        <h4>click: pinta celeste pero no es permanente</h4>
+        <h4>doble click: pinta gris pero no es permanente</h4>
+        <h4>tab: puedes borrar o pintar de color verde intenso</h4>
+    </div>
+    
+</body>
+</html>
