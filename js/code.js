@@ -2,23 +2,40 @@ $(document).ready(function(){
     var box = $(".box");
     var ths = $(this);
 
-  /*box.mouseover(function(){
-        $(this).css("background","#f33")
+    $("#uno").blur(function(){
+        var uno = $(this).val()
+        box.css("background-color",uno);
+    });
+    $("#uno-b").blur(function(){
+        var unoB = $(this).val()
+        box.css("border","3px solid "+unoB);
+    });
+    box.mouseover(function(){
+        $(this).css("background-color","#f33");
                .css("border","3px solid #a00");
     });
     box.mouseout(function(){
-        $(this).css("background","#ff0")
-               .css("border","3px solid #aa0");
-    });*/
-    function changeRed(){
-        $(this).css("background","#f33")
-               .css("border","3px solid #a00");
-    };
-    function changeyellow(){
-        $(this).css("background","#ff0")
-               .css("border","3px solid #aa0");
-    };
-    box.hover(changeRed,changeyellow)
+        $(this).css("background-color","#ff0");
+    });
+    box.mouseout(function(){
+        $(this).css("border","3px solid #aa0");
+    });
+    box.mouseout(function(){
+        $("#dos").blur(function(){
+            var dos = $(this).val();
+            box.mouseout(function(){
+                $(this).css("background-color",dos);
+            });
+        });
+    });
+    box.mouseout(function(){
+        $("#dos-b").blur(function(){
+            var dosB = $(this).val();
+            box.mouseout(function(){
+                $(this).css("border","3px solid "+dosB);
+            });
+        });
+    });
 
     box.click(function(){
         $(this).css("background","#0df")
@@ -32,15 +49,11 @@ $(document).ready(function(){
         $(this).css("background","#55f")
                .css("border","3px solid #33e");
     });
-    box.blur(function(){
-        $(this).css("background","#0f0")
-               .css("border","3px solid #0a0");
-    });
 
     //mouse
     $(document).mousemove(function(){
-        $("body").css("cursor","none")
         $("#mouse").css("left",event.clientX)
                    .css("top",event.clientY)
     });
+
 });
