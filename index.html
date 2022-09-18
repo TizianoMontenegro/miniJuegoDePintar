@@ -8,6 +8,9 @@
     <script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="/js/code.js"></script>
     <style>
+        body{
+            font-family: sans-serif;
+        }
         .block{
             display: flex;
             flex-wrap: wrap;
@@ -40,6 +43,11 @@
             transform:translate(5px,5px);
             opacity: .9;
         }
+        .colors{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
         
     </style>
 </head>
@@ -49,7 +57,24 @@
     <header class="header">
         <h1>pinta si puedes <span><a href="#controls">(controles)</a></span></h1>
     </header>
-
+    <div class="colors">
+        <div>
+            <label for="uno">Cambiar fondo:</label>
+            <input id="uno" type="color">
+        </div>
+        <div>
+            <label for="uno-b">Cambiar borde:</label>
+            <input id="uno-b" type="color">
+        </div>
+        <div>
+            <label for="dos">Cambiar pincel:</label>
+            <input id="dos" type="color">
+        </div>
+        <div>
+            <label for="dos-b">Cambiar pincel(bordes):</label>
+            <input id="dos-b" type="color">
+        </div>
+    </div>
 
     <div class="block">
         <div class="box" tabindex="1">
