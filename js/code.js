@@ -36,4 +36,11 @@ $(document).ready(function(){
         $(this).css("background","#0f0")
                .css("border","3px solid #0a0");
     });
+
+    //mouse
+    $(document).mousemove(function(){
+        $("body").css("cursor","none")
+        $("#mouse").css("left",event.clientX)
+                   .css("top",event.clientY)
+    });
 });
