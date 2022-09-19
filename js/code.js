@@ -11,7 +11,7 @@ $(document).ready(function(){
         box.css("border","3px solid "+unoB);
     });
     box.mouseover(function(){
-        $(this).css("background-color","#f33");
+        $(this).css("background-color","#f33")
                .css("border","3px solid #a00");
     });
     box.mouseout(function(){
